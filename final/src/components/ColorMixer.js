@@ -4,6 +4,7 @@ import { ReactDOM } from "react";
 function ColorMixer(){
     const [one, setOne] = useState("");
     const [two, setTwo] = useState("");
+    var result = 0;
 
     return(
         <form>
@@ -21,7 +22,8 @@ function ColorMixer(){
                     onChange={(e) => setTwo(e.target.value)}
                 />
             </label>
-            <p>Output: {one * two}</p>
+            
+            <p>Output: {one + two}</p>
         </form>
     );
 }
